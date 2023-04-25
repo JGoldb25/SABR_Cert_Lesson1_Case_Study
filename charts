@@ -1,3 +1,4 @@
+------------------
 # Hitters Code
 import matplotlib.pyplot as plt
 import numpy as np
@@ -84,4 +85,91 @@ autolabel(rects2)
 # Show the plot
 plt.show()
 
+------------------
+# Hitters WAR
+import matplotlib.pyplot as plt
 
+# Data for first chart
+x1 = [1, 2, 3, 4]
+p1_fWAR = [1.8, 5.3, 5.2, 4.9]
+p1_bWAR = [2.5, 5.6, 6.4, 5.8]
+p1_WARP = [2.7, 4.5, 4.3, 5.1]
+
+# Data for second chart
+x2 = [1, 2, 3, 4]
+p2_fWAR = [2.0, 4.3, 1.2, 1.7]
+p2_bWAR = [3.1, 4.9, 2.0, 2.5]
+p2_WARP = [3.0, 4.1, 2.3, 1.3]
+
+# Create first chart
+plt.subplot(1, 2, 1)  # 1 row, 2 columns, first chart
+plt.plot(x1, p1_fWAR, marker='o', label='fWAR')
+plt.plot(x1, p1_bWAR, marker='o', label='bWAR')
+plt.plot(x1, p1_WARP, marker='o', label='WARP')
+plt.ylim([0, 8])
+plt.title('Player A WAR Totals by Season', fontsize = 10)
+plt.xlabel('Player Season')
+plt.xticks(x1)
+plt.legend()
+
+# Create second chart
+plt.subplot(1, 2, 2)  # 1 row, 2 columns, second chart
+plt.plot(x2, p2_fWAR, marker='o', label='fWAR')
+plt.plot(x2, p2_bWAR, marker='o', label='bWAR')
+plt.plot(x2, p2_WARP, marker='o', label='WARP')
+plt.ylim([0, 8])
+plt.title('Player B WAR Totals by Season', fontsize = 10)
+plt.xlabel('Player Season')
+plt.xticks(x2)
+plt.legend()
+
+# Adjust the spacing between the subplots
+plt.subplots_adjust(wspace=0.6)
+
+# Display the charts
+plt.show()
+
+------------------
+# Pitchers WAR
+import matplotlib.pyplot as plt
+
+# Data for first chart
+x1 = [1, 2, 3, 4]
+p1_fWAR = [4.2, 2.5, 3.4, 4.1]
+p1_bWAR = [5.4, 3.5, 3.2, 3.9]
+p1_WARP = [3.9, 2.2, 3.2, 3.2]
+
+# Data for second chart
+x2 = [1, 2, 3, 4]
+p2_fWAR = [4.9, 4.2, 2.9, 1.8]
+p2_bWAR = [2.8, 5.6, 0.6, 3]
+p2_WARP = [3.5, 3.8, 2.4, 1.2]
+
+# Create first chart
+plt.subplot(1, 2, 1)  # 1 row, 2 columns, first chart
+plt.plot(x1, p1_fWAR, marker='o', label='fWAR')
+plt.plot(x1, p1_bWAR, marker='o', label='bWAR')
+plt.plot(x1, p1_WARP, marker='o', label='WARP')
+plt.ylim([0, 8])
+plt.title('Player A WAR Totals by Season', fontsize = 10)
+plt.xlabel('Player Season')
+plt.xticks(x1)
+plt.legend()
+
+# Create second chart
+plt.subplot(1, 2, 2)  # 1 row, 2 columns, second chart
+plt.plot(x2, p2_fWAR, marker='o', label='fWAR')
+plt.plot(x2, p2_bWAR, marker='o', label='bWAR')
+plt.plot(x2, p2_WARP, marker='o', label='WARP')
+plt.ylim([0, 8])
+plt.title('Player B WAR Totals by Season', fontsize = 10)
+plt.xlabel('Player Season')
+plt.xticks(x2)
+plt.legend()
+
+# Adjust the spacing between the subplots
+plt.subplots_adjust(wspace=0.6)
+
+# Display the charts
+plt.show()
+-----------------
